@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio Portal{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="header">
+            <span class="headerTxt">the portfolio portal</span>
+            <span class="headerTxt2">to sadaja riddick-johnson</span>
+        </div>
+
+        
+        <div class="left">
+            <div class="box">
+                <div class="nav boxHeader">
+                    <a href="{% url 'home' %}" >home</a>
+                    <a href="{% url 'about' %}">about</a>
+                    <a href="{% url 'projects' %}">projects</a>
+                </div>
+            </div> 
+            <br>
+            <div class="box music">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3HSJC6QWiSCRdU698479rJ?utm_source=generator&theme=0" width="100%" height="352"  allow="autoplay; clipboard-write; encrypted-media; loading="lazy"></iframe>
+                <span class="musicTxt boxHeader">get a preview of my music taste to gain some insider knowledge about me!</span>
+            </div>
+            <br>
+            <div class="box">
+                <span class="boxTxt">check out my game logging project!</span>
+            </div>
+            <br>
+            <div class="box">
+                <span></span>
+            </div>
+        </div>
+        <div class="middle">
+            {% block content %}
+            <div class="box">
+                <span class="boxTitle">WHO IS THIS ?</span>
+                <br>
+                <span class="boxTxt">hi! my name is Sadaja, pronounced suh-daja. you've come to my portfolio
+                website (with the goal of looking to hire me i hope). enjoy your stay!</span>
+            </div>
+            <br>
+            <div class="box">
+                <div class="tldr">
+                    <span class="boxTitle">TL;DR</span>
+                    <br>
+                    <span class="boxHeader">Educaiton:</span>
+                    <br>
+                    <spana class="boxTxt">BA Information Technology - Nov 2025</span>
+                    <br>
+                    <span>AS Information Technology - Nov 2024</span>
+                    <br>
+                    <span class="boxHeader">Skills/Certs:</span>
+                    <br>
+                    <span>Python, Django, HTML, CSS, SQL</span>
+                    <br>
+                    <span>CompTIA A+ - Sept 2027</span>
+                    <br>
+                    <span class="boxHeader">Experience:</span>
+                    <br>
+                    <span>Only through self teaching, no formal</span>
+                </div>
+                
+            </div>
+            <br>
+            <div class="box" style="text-align: center;">
+                <span class="boxTitle">Have more time?</span>
+                <br>
+                <span class="boxTxt">Head to the nav to get some more information!</span>
+            </div>
+            <!-- <div class="box projBox" >
+                <img src="{% static '/images/jsGame.png' %}" alt="jsGame" class="projImgs">
+                <div class="projTxt">
+                    <span class="projTitle">Accepted and Denied</span>
+                    <span class="projDes">this is a game i created with Javascript, CSS, and HTML. The goal of the game
+                        is to weed out IDs that are not over 21. this is my first big project i did on my own. its finished
+                        and is lacking some date numbers and images.. but i keep it around to remind myself i can actually do things when 
+                        i try.
+                    </span>
+                    <a href="https://fiddlefig.github.io/id-checker/" target="_blank"><button class="linkBtn">Game Link</button></a>
+                </div>
+            </div>
+            <br>
+            <div class="box projBox" >
+                <img src="" alt="" class="projImgs">
+                <div class="projTxt">
+                    <span class="projTitle">Portfolio Website</span>
+                    <span class="projDes">this is what you are currently looking at now! this website was 
+                        make with Django and some plain old CSS, HTML, and some Javascript sprinkled in. 
+                        <br>
+                        i really like the old 2000s website aesthetics, so thats what i tried to go for here. not sure 
+                        it exactly translated though. I chose django because i honestly had a rough time with react and wanted
+                        to try something different. after several youtube videos and end online guides, i was able to whip this 
+                        website up.
+                    </span>
+                    
+                </div>
+            </div> -->
+            {% endblock%}
+        </div>
+        <div class="right">
+            <div class="box">
+                <div style="width:100%;height:0;padding-bottom:89%;position:relative;"><iframe src="https://giphy.com/embed/ao9DUiTKH60XS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            </div>
+            <br>
+            <div class="box">
+                <span>links to socials</span>
+            </div>
+            <br>
+            <div class="box">
+                <div class="me">
+                    <div class="meImg">
+                        <img src="{% static '/images/me.jpeg' %}" alt="picofme" width="250">
+                    </div>
+                    <span class="boxTitle">Sadaja Riddick-Johnson</span>
+                    <span class="boxTxt">reach me at sriddickjobs@gmail.com</span>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+    </div>
+
+
+
+    <script src="{% static 'js/home.js' %}"></script>
+    <footer>Created and Powered by Sadaja Riddick-Johnson</footer>
+</body>
+</html>
+
+<!-- to do:
+ edit nav
+ add more to left side boxes
+ make the title box pop more, look better
+ add icon links to github and linkedin
+ add link to game logging website and add as project
+
+ add tl;dr box to the top
+ add homelab diagram and description in projects
+
+ 
+ make new projects, ideas:
+ dinner decider
+ website dedicated to uplifting other means of transportation-->

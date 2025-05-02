@@ -1,0 +1,80 @@
+{% extends 'app1/home.html' %}
+{% load static %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio Portal{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    
+</head>
+<body>
+    {% block content %}
+    <div class="box">
+        <div class="projBox">
+            <div class="projImgs">
+                <img src="/staticfiles/images/port.png" alt="js game" style="height: 200px;">
+            </div>
+            <div class="projInfo">
+                <span class="boxTitle">Portfolio Website</span>
+                <span class="boxTxt">This is what you are seeing right now! I made 
+                    this with Django and some plain CSS. I wanted to give off kind of an early 
+                    2000s design, really sure if that came through but I like the look of it.
+                </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="box">
+        <div class="projBox">
+            <div class="projImgs">
+                <img src="/staticfiles/images/jsGame.png" alt="js game" class="projImgs">
+            </div>
+            <div class="projInfo">
+                <span class="boxTitle">Game Tracker</span>
+                <span class="boxTxt">This was made this year (2025) with Bootstrap and Django. 
+                    I use this to keep track of the games I am playing and games that have fallen 
+                    into my backlog that I'd like to pick back up. Nothing fancy but it is something I use 
+                    frequently.
+                </span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="box">
+        <div class="projBox">
+            <div class="projImgs">
+                <img src="/staticfiles/images/jsGame.png" alt="js game" class="projImgs">
+            </div>
+            <div class="projInfo">
+                <span class="boxTitle">Accepted and Denied</span>
+                <span class="boxTxt">This is a game I made in 2023 with HTML, CSS, and vanilla JavaScript.
+                    the goal of the game is to decide whether or not the birthday on the ID is over 21. this 
+                    is definitely one of my older projects and one of my first. i have it here now because i 
+                    worked really hard on it even though its kind of broken and bad.
+                </span>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    <footer>Created by Sadaja Riddick-Johnson</footer>
+</body>
+</html>
+
+<!-- to do:
+ edit nav
+ add more to left side boxes
+ make the title box pop more, look better
+ add icon links to github and linkedin
+ add link to game logging website and add as project
+
+ add tl;dr box to the top
+ add homelab diagram and description in projects
+
+ 
+ make new projects, ideas:
+ dinner decider
+ website dedicated to uplifting other means of transportation-->

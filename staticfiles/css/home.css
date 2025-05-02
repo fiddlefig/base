@@ -1,0 +1,229 @@
+
+@font-face {
+    font-family: robot;
+    src: url('/staticfiles/css/fonts/robot.otf');
+}
+@font-face {
+    font-family: born2bsporty;
+    src: url('/staticfiles/css/fonts/born2bsporty.otf');
+}
+@font-face {
+    font-family: Blox2;
+    src: url('/staticfiles/css/fonts/blox-brk/Blox2.ttf');
+}
+/* colors: darker #333333 lighter #666666 */
+/* * {
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/* html {
+    background-color: #666666;
+} */
+body {
+    width: 60%;
+    margin: auto;
+    color: white;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgifdb.com%2Fimages%2Fhigh%2Fstarfield-dark-background-sgli8iwvguwxzovr.gif&f=1&nofb=1&ipt=ae442e7da2a2dd01fe9219be866b35cb80361f51db324da4a463896263854cec');
+    background-repeat: repeat;
+    margin-top: 20px;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    
+}
+.box {
+    border: 8px black ridge;
+    padding: 10px;
+    background-color: #333333;
+}
+.boxTitle {
+    font-family: 'robot';
+    font-size: 33px;
+    color: #ff6600;
+}
+.boxHeader {
+    font-family: 'robot';
+    font-size: 27px;
+    color: #bb4b00;
+}
+.boxTxt {
+    font-family: 'born2bsporty';
+    font-size: 23px;
+    color: white;
+}
+
+/* left */
+.left {
+    grid-row: 2;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    background-color: #ff6600;
+    padding: 5px;
+    
+}
+.nav a:hover {
+    color: white;
+    background-color: #bb4b00;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.music {
+    font-size: 20px;
+    text-align: center;
+    color: #ff6600;
+}
+audio {
+    background-color: #ff6600;
+}
+
+
+
+/* middle */
+.middle {
+    grid-row: 2;
+    grid-column: 2/4;
+    padding: 10px;
+    /* font-family: 'robot'; */
+}
+/* .middleTitle {
+    font-size: 33px;
+    color: #ff6600;
+    font-family: 'robot';
+}
+.middleHeader {
+    font-size: 27px;
+    color: #bb4b00;
+    font-family: 'robot';
+}
+.middleTxt {
+    font-size: 23px;
+    font-family: 'born2bsporty';
+} */
+.header {
+    grid-row: 1;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Blox2';
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+    letter-spacing: 3px;
+    color: #ff6600;
+}
+.headerTxt {
+    
+    display: flex;
+    justify-content: start;
+    border: 8px black ridge;
+    border-bottom: none;
+    background-color: #333333;
+    padding: 10px;
+}
+.headerTxt2 {
+    
+    display: flex;
+    justify-content: flex-end;
+    border: 8px black ridge;
+    border-top: none;
+    margin-bottom: 20px;
+    background-color: #333333;
+    padding: 10px;
+}
+.tldr {
+    text-align: center;
+}
+
+
+
+/* right */
+.right {
+    grid-row: 2;
+    grid-column: 4/5;
+}
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #ff6600;
+}
+.meImg img{
+    border-radius: 100%;
+    border: 8px grey solid
+}
+
+
+
+/* about page */
+.aboutTitle {
+    color: #ff6600;
+}
+.aboutBox {
+    font-size: 25px;
+}
+.aboutTxt {
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+.edBox {
+    text-align: center;
+}
+/* proj page */
+.projImgs img{
+    width: 300px;
+    
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+.projBox {
+    display: flex;
+}
+.projInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+
+
+
+.linkBtn {
+    margin-top: 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    font-family: 'robot';
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.linkBtn:hover {
+    color: white;
+    background-color: #bb4b00;
+}
+
+
+
+
+
+
+
+footer {
+    font-family: 'robot';
+    color: #ff6600;
+    font-size: 15px;
+    text-align: center;
+}

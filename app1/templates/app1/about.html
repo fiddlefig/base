@@ -1,0 +1,77 @@
+{% extends 'app1/home.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Portal - About</title>
+</head>
+<body>
+    {% block content %}
+    <div class="box">
+        <span class="boxTitle">Hello! :)</span>
+        <br>
+        <span class="boxTxt">you've made it to my about page. thanks for taking the 
+            extra couple steps to get a little more detail about me!
+        </span>
+    </div>
+    <br>
+    <div class="box aboutBox">
+        <span class="boxTxt">Educaiton</span>
+        <div class="edBox">
+            <span class="boxTitle">Purdue Global - BA Information Technology</span>
+            <br>
+            <span class="boxTxt">In Progress. Grad date November 2025</span>
+        </div>
+        <div class="edBox">
+            <span class="boxTitle">Purdue Global - AS Information Technology</span>
+            <br>
+            <span class="boxTxt">Obtained November 2024. Con. Programming and Software Development</span>
+        </div>
+    </div>
+    <br>
+    <div class="box">
+        <span class="boxTitle">Experience</span>
+        <br>
+        <span class="boxTxt">
+            so this is the scary part.. i have no formal experience in IT. BUT WAIT! don't let that scare you away!
+             I believe that this shows my resiliance and determination quite a lot.
+            i'd say about 75% of what i know has been obtained from my own self teaching.
+            so though I have not been able to get any formal experience, I ask you to look and see that I 
+            am a very self sufficent person that is willing to learn and get an exerience needed. I promise 
+            i am good for it and you'll get an excellent employee out of it.
+        </span>
+    </div>
+    <br>
+    <div class="box">
+        <span class="boxTitle">Skills/Certs</span>
+        <br>
+        <span class="boxHeader">Certificates:</span>
+        <span class="boxTxt">CompTIA A+</span>
+        <br>
+        <span class="boxTxt">As for technical skills, I am big on Python and the Django framework, 
+            i've got enough aptitude to use HTML and CSS in a proficient manner, and i have dabbled in 
+            SQL during my school classes and loved it. Networking has also been an interest of mine that I 
+            continuously return to as I do have a home server.
+        </span>
+    </div>
+    <br>
+    <div class="box">
+        <span class="boxTitle">what else is there to know?</span>
+        <span class="boxTxt">now with all the technical important stuff out of the way, i'll tell you some cooler stuff about me.
+            I am HUGE on video games. Thats got to be my biggest hobby. I primarly play on PC but I do really enjoy 
+            playing on handheld consoles such as the 3DS and the PS Vita. I also own a Steam Deck which is a handheld 
+            computer. My favorite game genres are open world games with character custimization and base building.
+            I also really enjoy multiplayer games like Overwatch, Lethal Company, and Marvel Rivals.
+        </span>
+        <span class="boxTxt">another hobby of mine is building Gunpla. These are best described as plasic robot models 
+            that you build piece by piece.They can be incredibly time consumiung, but very rewarding when 
+            you've got something cool to show off at the end. I have completed over 15 models and have a couple 
+            in my backlog that I need to finish.
+        </span>
+    </div>
+    {% endblock %}
+</body>
+</html>
