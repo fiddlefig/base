@@ -26,17 +26,18 @@
             </div> 
             <br>
             <div class="box music">
+                <span class="musicTxt boxHeader">Music Taste Preview</span>
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3HSJC6QWiSCRdU698479rJ?utm_source=generator&theme=0" width="100%" height="352"  allow="autoplay; clipboard-write; encrypted-media; loading="lazy"></iframe>
-                <span class="musicTxt boxHeader">get a preview of my music taste to gain some insider knowledge about me!</span>
+                
             </div>
             <br>
-            <div class="box">
-                <span class="boxTxt">check out my game logging project!</span>
+            <!-- <div class="leftBoxTwo">
+                <span class="boxTxt leftBoxTxt">check out my gamer page!</span>
             </div>
             <br>
             <div class="box">
                 <span>box placeholder</span>
-            </div>
+            </div> -->
         </div>
         <div class="middle">
             {% block content %}
@@ -45,6 +46,8 @@
                 <br>
                 <span class="boxTxt">hi! my name is Sadaja, pronounced suh-daja. you've come to my portfolio
                 website (with the goal of looking to hire me i hope). enjoy your stay!</span>
+                <br>
+                <sppan class="boxTxt">Oh and FYI, this page is a work in progess, so don't judge TOO harshly</sppan>
             </div>
             <br>
             <div class="box">
@@ -83,52 +86,9 @@
                 <br>
                 <span class="boxTxt">Head to the nav to get some more information!</span>
             </div>
-            <!-- <div class="box projBox" >
-                <img src="{% static '/images/jsGame.png' %}" alt="jsGame" class="projImgs">
-                <div class="projTxt">
-                    <span class="projTitle">Accepted and Denied</span>
-                    <span class="projDes">this is a game i created with Javascript, CSS, and HTML. The goal of the game
-                        is to weed out IDs that are not over 21. this is my first big project i did on my own. its finished
-                        and is lacking some date numbers and images.. but i keep it around to remind myself i can actually do things when 
-                        i try.
-                    </span>
-                    <a href="https://fiddlefig.github.io/id-checker/" target="_blank"><button class="linkBtn">Game Link</button></a>
-                </div>
-            </div>
-            <br>
-            <div class="box projBox" >
-                <img src="" alt="" class="projImgs">
-                <div class="projTxt">
-                    <span class="projTitle">Portfolio Website</span>
-                    <span class="projDes">this is what you are currently looking at now! this website was 
-                        make with Django and some plain old CSS, HTML, and some Javascript sprinkled in. 
-                        <br>
-                        i really like the old 2000s website aesthetics, so thats what i tried to go for here. not sure 
-                        it exactly translated though. I chose django because i honestly had a rough time with react and wanted
-                        to try something different. after several youtube videos and end online guides, i was able to whip this 
-                        website up.
-                    </span>
-                    
-                </div>
-            </div> -->
             {% endblock%}
         </div>
         <div class="right">
-            <div class="box">
-                <div style="width:100%;height:0;padding-bottom:89%;position:relative;"><iframe src="https://giphy.com/embed/ao9DUiTKH60XS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-            </div>
-            <br>
-            <div class="box" id="socialsBox">
-                <div style="display: flex; justify-content: center;">
-                    <a href="https://www.linkedin.com/in/sadaja-r-953a30208/" target="_blank"><img src="/staticfiles/images/LI-In-Bug.png" alt="linkedin" class="iconImg"></a>
-                    <a href="https://www.resume.lol/share/rn02a65" target="_blank"><img src="/staticfiles/images/android-chrome-192x192.png" alt="resumeimg" class="iconImg"></a>
-                </div>
-                <div style="text-align: center;">
-                    <span class="boxTxt">LinkedIn and Resume</span>
-                </div>
-                
-            </div>
-            <br>
             <div class="box">
                 <div class="me">
                     <div class="meImg">
@@ -139,7 +99,20 @@
                 </div>
             </div>
             
-            
+            <br>
+            <div class="box" id="socialsBox">
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/sadaja-r-953a30208/" target="_blank"><img src="/staticfiles/images/LI-In-Bug.png" alt="linkedin" class="iconImg"></a>
+                    <a href="https://www.resume.lol/share/rn02a65" target="_blank"><img src="/staticfiles/images/android-chrome-192x192.png" alt="resumeimg" class="iconImg"></a>
+                </div>
+                <div style="text-align: center;">
+                    <span class="boxTxt">LinkedIn and Resume</span>
+                </div>
+            </div>
+            <br>
+            <div class="box">
+                <div style="width:100%;height:0;padding-bottom:89%;position:relative;"><iframe src="https://giphy.com/embed/ao9DUiTKH60XS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            </div>
         </div>
         
         
@@ -153,14 +126,10 @@
 </html>
 
 <!-- to do:
- edit nav
- add more to left side boxes
- make the title box pop more, look better
- add icon links to github and linkedin
- add link to game logging website and add as project
 
- add tl;dr box to the top
- add homelab diagram and description in projects
+ add more to left side boxes
+make popout window for homeserver project picture
+add more buttons to proj boxes
 
  
  make new projects, ideas:
